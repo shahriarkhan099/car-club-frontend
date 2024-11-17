@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run build && npm run preview",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "build-and-preview": "npm run build && npm run preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.7.7",
