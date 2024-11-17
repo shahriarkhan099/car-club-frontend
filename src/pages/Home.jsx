@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await api.get("/news");
+        const response = await api.get("/events");
         if (Array.isArray(response.data)) {
           setEvents(response.data);
         } else {
