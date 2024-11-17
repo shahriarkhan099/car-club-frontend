@@ -36,7 +36,7 @@ function UsersManager() {
 
   const handleRemoveUser = async (id) => {
     try {
-      await createApiClient().delete(`/${id}`);
+      await createApiClient().delete(`/admins/${id}`);
       setUsers(users.filter((user) => user.id !== id));
     } catch (error) {
       handleApiError(error);
